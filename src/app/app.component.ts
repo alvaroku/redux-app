@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'prueba-bot';
+  contador:number
+
+  constructor(){
+    this.contador = 10
+  }
+
+  incrementar(){
+    this.contador++
+  }
+  decrementar(){
+    this.contador--
+  }
 }
