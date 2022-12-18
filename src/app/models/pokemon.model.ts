@@ -3,7 +3,8 @@ export interface Pokemon{
     name:string,
     sprites:Sprites
     height:number,
-    weight:number
+    weight:number,
+    base_experience:number
 
 }
 
