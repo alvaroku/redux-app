@@ -18,19 +18,19 @@ export class AppComponent {
   contador:number=0
 
   constructor(private store: Store<AppState>,private pokemonService:PokemonService){
-    this.store.select('contador').subscribe(state=>this.contador = state)
-    this.getPokemon()
+    this.store.select('contador').subscribe(state=>{
+      this.contador = state
+      this.getPokemon()
+    })
+    
   }
   incrementar(){
     const accion = new IncrementarAction()
     this.store.dispatch(accion)
-    this.getPokemon()
-
   }
   decrementar(){
     const accion = new DecrementarAction()
     this.store.dispatch(accion)
-    this.getPokemon()
   }
   getPokemon(){
     this.pokemon = this.pokemonService.getPokemon(this.contador).subscribe(result=> this.pokemon = result);
