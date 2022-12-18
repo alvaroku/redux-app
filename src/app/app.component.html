@@ -12,11 +12,17 @@
         <button (click) = "decrementar()" class="btn btn-danger">Dec</button>
     </div>
 </div>
-
-<hr>
+<div class="row">
+    <div class="col col-3"></div>
+    <div class="col col-6">
+        <app-pokemon [pokemon] = "pokemon"></app-pokemon>
+    </div>
+    <div class="col col-3"></div>
+</div>
+<!-- <hr>
 
 <div class="row text-center">
     <div class="col">
         <app-hijo [contador] = contador (cambioContador) = "contador = $event"></app-hijo>
     </div>
-</div>
+</div> -->

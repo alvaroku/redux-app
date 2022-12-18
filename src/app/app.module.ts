@@ -8,6 +8,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokemonService } from './services/pokemon.service';
 import { HijoComponent } from './components/contador/hijo/hijo.component';
 import { NietoComponent } from './components/contador/nieto/nieto.component';
+ 
+import { contadorReducer } from './components/contador/contador.reducer';
+import { StoreModule } from '@ngrx/store';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +21,7 @@ import { NietoComponent } from './components/contador/nieto/nieto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    StoreModule.forRoot({contador:contadorReducer}),
     HttpClientModule
   ],
   providers: [PokemonService],
