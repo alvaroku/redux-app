@@ -1,7 +1,7 @@
 import { Action } from "@ngrx/store";
 import { DECREMENTAR, INCREMENTAR } from "./contador.actions";
 
-export function contadorReducer(state:number = 10,action:Action){
+export function contadorReducer(state:number = 1,action:Action){
     switch(action.type){
         case INCREMENTAR:
             return state+1
