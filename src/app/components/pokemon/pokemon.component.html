@@ -1,9 +1,20 @@
-
-<div class="card" >
-    <img class="card-img-top" src="{{pokemon.sprites.front_default}}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{pokemon.id}}. {{pokemon.name}}</h5>
-      <p class="card-text">Height: {{pokemon.height}} <br>Weight: {{pokemon.weight}}</p>
-      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+<div class="row">
+  <div class=" col-md-2 col-lg-2"></div>
+  <div class=" col-sm-12 col-md-8 col-lg-8">
+    <div class="card">
+      <div class="row">
+        <img class="col col-3" src="{{pokemon.sprites.back_default}}" alt="Card image cap">
+        <img class="col col-3 " src="{{pokemon.sprites.back_shiny}}" alt="Card image cap">
+        <img class="col col-3 " src="{{pokemon.sprites.front_default}}" alt="Card image cap">
+        <img class="col col-3 " src="{{pokemon.sprites.front_shiny}}" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{pokemon.id}}. {{pokemon.name}}</h5>
+        <p class="card-text">Height: {{pokemon.height}} <br>Weight: {{pokemon.weight}}</p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
     </div>
+  </div>
+  <div class=" col-md-2 col-lg-2"></div>
 </div>
+
