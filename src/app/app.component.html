@@ -8,15 +8,15 @@
 
     <div class="row text-center">
         <div class="col">
-            <img (click)="incrementar()" src="../assets/plus.png" width="70px" class="btn" alt="">
-            <img (click)="decrementar()" src="../assets/minus.png" width="70px" class="btn" alt="">
-            <!-- <button (click) = "incrementar()" class="btn btn-success"></button>
+            <!-- <img (click)="incrementar()" src="../assets/plus.png" width="70px" class="btn" alt="">
+            <img (click)="decrementar()" src="../assets/minus.png" width="70px" class="btn" alt=""> -->
+            <button (click) = "decrementar()" class="btn btn-danger">Anterior</button>
             {{" "}}
-            <button (click) = "decrementar()" class="btn btn-danger">Dec</button> -->
+            <button (click) = "incrementar()" class="btn btn-success">Siguiente</button>
         </div>
     </div>
 
-    <div *ngIf="contador>0">
+    <div>
         <app-pokemon [pokemon]="pokemon"></app-pokemon>
     </div>
 </div>
