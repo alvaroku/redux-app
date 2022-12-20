@@ -11,6 +11,10 @@ import { NietoComponent } from './components/contador/nieto/nieto.component';
  
 import { contadorReducer } from './components/contador/contador.reducer';
 import { StoreModule } from '@ngrx/store';
+
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import {environment} from '../environtments/environment'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +26,10 @@ import { StoreModule } from '@ngrx/store';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({contador:contadorReducer}),
+    StoreDevtoolsModule.instrument({
+      maxAge:24,
+      logOnly: environment.production
+    }),
     HttpClientModule
   ],
   providers: [PokemonService],

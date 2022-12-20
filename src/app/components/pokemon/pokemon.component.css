@@ -7,16 +7,22 @@
    border-radius: 10px;
 
 }
-
+.carousel-item img{
+   width: 100%;
+}
 
 .card{
- width: 400px;
+ width: 50%;
  border: none;
  border-radius: 10px;
   
  background-color: #fff;
 }
-
+@media (max-width: 1000px) {
+   .card{
+      width: 100%;
+   }
+ }
 
 
 .stats{
