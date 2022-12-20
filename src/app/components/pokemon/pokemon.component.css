@@ -10,7 +10,12 @@
 .carousel-item img{
    width: 100%;
 }
-
+.image img{
+   width: 100%;
+}
+.image{
+   width: 455px;
+}
 .card{
  width: 50%;
  border: none;
@@ -21,6 +26,9 @@
 @media (max-width: 1000px) {
    .card{
       width: 100%;
+   }
+   .image{
+      width: 300px;
    }
  }
 
