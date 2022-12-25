@@ -1,63 +1,133 @@
- .sr-only{
-    color: black;
- }
- body{
-    
-   background-color:#B3E5FC;
-   border-radius: 10px;
 
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+ 
+:root{
+   --border-radius-size: 14px;
+--barbarian: #EC9B3B;
+--archer: #EE5487;
+--giant: #F6901A;
+--goblin: #82BB30;
+--wizard: #4FACFF;
 }
-.carousel-item img{
-   width: 100%;
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
-.image img{
-   width: 100%;
-}
-.image{
-   width: 455px;
-}
-.card{
- width: 50%;
- border: none;
- border-radius: 10px;
+
+.slide-container {
+  margin: auto;
   
- background-color: #fff;
+  text-align: center;
 }
-@media (max-width: 1000px) {
-   .card{
-      width: 100%;
-   }
-   .image{
-      width: 300px;
-   }
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  
+}
+
+.wrapper:focus {
+   outline: 0;
  }
 
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
 
-.stats{
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
 
-     background: #f2f5f8 !important;
+.clash-card__image--barbarian {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+   
+}
+.clash-card__image--barbarian img{
+   width: 360px;
+   position: absolute;    
+   top: -65px;
+   left: -70px;
+}
+ 
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
 
-   color: #000 !important;
+.clash-card__level--barbarian {
+  color: #EC9B3B;
 }
-.articles{
- font-size:10px;
- color: #a1aab9;
-}
-.number1{
- font-weight:500;
-}
-.followers{
-   font-size:10px;
- color: #a1aab9;
 
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
 }
-.number2{
- font-weight:500;
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
 }
-.rating{
-   font-size:10px;
- color: #a1aab9;
+
+.clash-card__unit-stats--barbarian {
+  background-color:#EC9B3B;
 }
-.number3{
- font-weight:500;
+.clash-card__unit-stats--barbarian .one-third {
+   border-right: 1px solid #BD7C2F;
+}
+
+.clash-card__unit-stats {
+  
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  
+}
+.clash-card__unit-stats .one-third {
+   width: 33%;
+   float: left;
+   padding: 20px 15px;
+ }
+
+.clash-card__unit-stats .stat {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.clash-card__unit-stats .stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+.clash-card__unit-stats .no-border {
+   border-right: none;
+ }
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }

@@ -1,18 +1,15 @@
 <div class="container">
     <div class="row text-center">
         <div class="col">
-            <h2>Pokemon</h2>
-            <h3>{{contador}}</h3>
+            <h3 class="">Pokemon {{contador}}</h3>
         </div>
     </div>
 
     <div class="row text-center">
         <div class="col">
-            <!-- <img (click)="incrementar()" src="../assets/plus.png" width="70px" class="btn" alt="">
-            <img (click)="decrementar()" src="../assets/minus.png" width="70px" class="btn" alt=""> -->
-            <button (click) = "decrementar()" class="btn btn-danger">Anterior</button>
+            <button (click) = "decrementar()" class="btn btn-outline-danger"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
             {{" "}}
-            <button (click) = "incrementar()" class="btn btn-success">Siguiente</button>
+            <button (click) = "incrementar()" class="btn btn-outline-primary"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
         </div>
     </div>
 
